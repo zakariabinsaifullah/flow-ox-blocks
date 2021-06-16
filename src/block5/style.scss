@@ -1,0 +1,24 @@
+.wp-block-flox-faq-block {
+  p.uagb-desc-text {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .faq-head {
+    margin-bottom: 30px;
+  }
+  .faq-desc {
+    margin-top: 15px;
+  }
+  .faq-wrapper {  
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wp-block-flox-faq-block {
+    padding: 25px !important;
+    .faq-wrapper {
+      max-width: 100% !important;
+    }
+  }
+}

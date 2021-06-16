@@ -1,0 +1,58 @@
+.wp-block-flox-banner-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  .uagb-desc-text {
+    margin-bottom: 0 !important;
+    font-weight: 500 !important;
+  }
+  p:empty {
+    display: none !important;
+  }
+  .buttons-group {
+    margin-top: 30px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+  }
+  .buttons-group {
+    a:hover {
+      opacity: 0.75;
+    }
+  }
+  .content-area,
+  .banner-area {
+    width: 100%;
+  }
+  .banner-area {
+    margin-left: 5%;
+  }
+  .content-area {
+    p:empty {
+      display: none;
+    }
+    .separator {
+      margin-bottom: 15px;
+    }
+  }
+}
+// Responsive CSS
+@media only screen and (max-width: 600px) {
+  .wp-block-flox-banner-section {
+    flex-wrap: wrap-reverse !important;
+    .buttons-group {
+      margin-top: 30px;
+      a {
+        display: block !important;
+      }
+    }
+    .banner-area {
+      margin-left: 0 !important;
+      margin-bottom: 30px !important;
+    }
+  }
+}

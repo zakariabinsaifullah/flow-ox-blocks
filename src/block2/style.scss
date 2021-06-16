@@ -1,0 +1,57 @@
+.wp-block-flox-hero-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .buttons-group {
+    margin-top: 50px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 40px;
+      border-radius: 50px;
+      transition: 0.2s;
+      text-align: center;
+    }
+    a:first-child {
+      margin-right: 30px;
+    }
+  }
+  .buttons-group {
+    a:hover {
+      opacity: 0.75;
+    }
+  }
+  .content-area,
+  .banner-area {
+    width: 100%;
+  }
+  .banner-area {
+    margin-left: 5%;
+  }
+  .content-area {
+    p:empty {
+      display: none;
+    }
+  }
+}
+// Responsive CSS
+@media only screen and (max-width: 600px) {
+  .wp-block-flox-hero-section {
+    flex-wrap: wrap-reverse !important;
+    .buttons-group {
+      margin-top: 30px;
+      a {
+        display: block !important;
+      }
+      a:first-child {
+        margin-right: 0 !important;
+        margin-bottom: 20px !important;
+      }
+    }
+    .banner-area {
+      margin-left: 0 !important;
+      margin-bottom: 30px !important;
+    }
+  }
+}
